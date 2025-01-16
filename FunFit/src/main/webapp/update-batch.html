@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Batch</title>
+</head>
+<body>
+	<h1>Update Batch</h1>
+
+	<form action="batch" method="post">
+		<input type="hidden" name="action" value="update"> <input
+			type="hidden" name="id" value="${batch.batchId}"> <label
+			for="batchName">Batch Name:</label> <input type="text" id="batchName"
+			name="batchName" value="${batch.batchName}" required><br>
+		<br> <label for="startTime">Start Time:</label> <input
+			type="time" id="startTime" name="startTime"
+			value="${batch.startTime}" required><br>
+		<br> <label for="endTime">End Time:</label> <input type="time"
+			id="endTime" name="endTime" value="${batch.endTime}" required><br>
+		<br> <label for="dayOfWeek">Day of Week:</label> <input
+			type="text" id="dayOfWeek" name="dayOfWeek"
+			value="${batch.dayOfWeek}" required><br>
+		<br>
+
+		<button type="submit">Update Batch</button>
+	</form>
+</body>
+</html>

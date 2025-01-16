@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Batch</title>
+</head>
+<body>
+	<h1>Add New Batch</h1>
+
+	<form action="batch" method="post">
+		<input type="hidden" name="action" value="insert"> <label
+			for="batchName">Batch Name:</label> <input type="text" id="batchName"
+			name="batchName" required><br>
+		<br> <label for="startTime">Start Time:</label> <input
+			type="time" id="startTime" name="startTime" required><br>
+		<br> <label for="endTime">End Time:</label> <input type="time"
+			id="endTime" name="endTime" required><br>
+		<br> <label for="dayOfWeek">Day of Week:</label> <input
+			type="text" id="dayOfWeek" name="dayOfWeek" required><br>
+		<br>
+
+		<button type="submit">Add Batch</button>
+	</form>
+</body>
+</html>

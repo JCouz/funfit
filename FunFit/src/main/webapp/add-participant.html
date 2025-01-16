@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Participant</title>
+</head>
+<body>
+	<h1>Add New Participant</h1>
+
+	<form action="participant" method="post">
+		<input type="hidden" name="action" value="insert"> <label
+			for="name">Name:</label> <input type="text" id="name" name="name"
+			required><br>
+		<br> <label for="email">Email:</label> <input type="email"
+			id="email" name="email" required><br>
+		<br> <label for="phoneNumber">Phone Number:</label> <input
+			type="text" id="phoneNumber" name="phoneNumber" required><br>
+		<br> <label for="batchId">Batch ID:</label> <input type="number"
+			id="batchId" name="batchId" required><br>
+		<br>
+
+		<button type="submit">Add Participant</button>
+	</form>
+</body>
+</html>
